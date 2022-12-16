@@ -9,6 +9,7 @@ The computer must select a random option between "rock", "paper" and "scissors"
 
 The game must have 5 rounds!
 
+```
 WHILE rounds !== 5 DO
   WHEN I select one of the options
     IF my selection beats the computer selection
@@ -20,13 +21,17 @@ WHILE rounds !== 5 DO
   END
   ++rounds
 END
+```
 
 Whoever has the most victories wins!
 
+```
 IF player_victory > computer_victory
   I win!
 END
-
+```
+```
 IF computer_victory > player_victory
   I lose!
 END
+```
