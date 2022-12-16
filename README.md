@@ -5,7 +5,7 @@ Project: Rock Paper Scissors, from [The Odin Project](https://www.theodinproject
 
 - [Link to the assignment! (Part 1)](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors)
 
-# Pseudocode
+## Pseudocode
 I want to play a Rock-Paper-Scissors game against my computer!
 
 I want to select between "rock", "paper" and "scissors"
