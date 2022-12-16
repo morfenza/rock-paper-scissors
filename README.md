@@ -35,3 +35,8 @@ IF computer_victory > player_victory
   I lose!
 END
 ```
+```
+IF computer_victory === player_victory
+  Draw!
+END
+```
