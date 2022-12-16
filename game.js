@@ -5,6 +5,7 @@ function getComputerChoice() {
   return choicesArray[Math.floor(Math.random() * choicesArray.length)]
 }
 
+// Play a single round
 function playRound(computerChoice, playerChoice) {
   
   if (playerChoice === "rock") {
@@ -51,6 +52,7 @@ function playRound(computerChoice, playerChoice) {
   }
 }
 
+// Main game loop
 function game() {
   console.log("Welcome! Let's play a Rock-Paper-Scissors game!")
   console.log("The game consists in 5 round battles against the computer! Good luck!")
@@ -107,4 +109,5 @@ function game() {
   }
 }
 
+// game call
 game()
