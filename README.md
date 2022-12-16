@@ -1,7 +1,9 @@
 # Rock Paper Scissors
-Javascript project from [The Odin Project](https://www.theodinproject.com/about)
+Project: Rock Paper Scissors, from [The Odin Project](https://www.theodinproject.com/about)
 
-*[Link to the assignment!](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors)
+## Links
+
+- [Link to the assignment! (Part 1)](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors)
 
 # Pseudocode
 I want to play a Rock-Paper-Scissors game against my computer!
