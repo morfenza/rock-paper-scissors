@@ -5,46 +5,62 @@
   <head>
     <meta charset="UTF-8">
     <title>Jankenpon</title>
+    <link rel="stylesheet" href="./css/styles.css">
     <script src="./js/game-current.js" defer></script>
   </head>
 
   <body>
+    <header>
+      <div>
+        Rock Paper Scissors
+      </div>
+      <div>
+        <a href="https://github.com/morfenza/rock-paper-scissors" id="top-link" target="_blank">Github Repo</a>
+      </div>
+    </header>
 
     <div class="game-container">
-      <div id="player">
-        <img src="./images/player.png" alt="a person icon">
-        <div> Result: <span id="h-counter">0</span></div>
-        <div class="btn-container">
-          <button class='btn' id="rock"><img src="./images/rocks.png" alt="rocks"></button>
-          <button class='btn' id="paper"><img src="./images/paper.png" alt="papers"></button>
-          <button class='btn' id="scissors"><img src="./images/scissors.png" alt="scissors"></button>
+      <div class="players-container">
+        <div id="player">
+          <div class="results-container">
+            <img src="./images/player.png" alt="a person icon">
+            <div class="result-counter"> 
+              Result: <span id="h-counter">0</span>
+            </div>
+          </div>
+          <div class="btn-container">
+            <button class='btn' id="rock"><img src="./images/rocks.png" alt="rocks"></button>
+            <button class='btn' id="paper"><img src="./images/paper.png" alt="papers"></button>
+            <button class='btn' id="scissors"><img src="./images/scissors.png" alt="scissors"></button>
+          </div>
+        </div>
+        
+        <div id="computer">
+          <div class="results-container">
+            <img src="./images/computer.png" alt="a computer icon">
+            <div class="result-counter"> 
+              Result: <span id="c-counter">0</span>
+            </div>
+          </div>
+          <div class="btn-container">
+            <button class='btn' id="c-rock"><img src="./images/rocks.png" alt="rocks"></button>
+            <button class='btn' id="c-paper"><img src="./images/paper.png" alt="papers"></button>
+            <button class='btn' id="c-scissors"><img src="./images/scissors.png" alt="scissors"></button>
+          </div>
         </div>
       </div>
       
-      <div id="computer">
-        <img src="./images/computer.png" alt="a computer icon">
-        <div> Result: <span id="c-counter">0</span></div>
-        <div class="btn-container">
-          <button class='btn' id="c-rock"><img src="./images/rocks.png" alt="rocks"></button>
-          <button class='btn' id="c-paper"><img src="./images/paper.png" alt="papers"></button>
-          <button class='btn' id="c-scissors"><img src="./images/scissors.png" alt="scissors"></button>
-        <div>
+      <div id="result">
+        Let's Play
       </div>
     </div>
 
-    <div id="result">
-      Let's Play
-    </div>
-      
     <footer>
       <p>
-        Icons created by <a href="https://www.flaticon.com/free-icons/" title="rock-paper-scissor-icons">Freepik - Flaticon</a>
-      </p>
-      <p>
-        Project created by <a href="https://github.com/morfenza">Ian Lourenço</a>
+        Icons provided by <a href="https://www.flaticon.com/free-icons/" title="rock-paper-scissor-icons">Freepik - Flaticon</a>
+        | Project created by <a href="https://github.com/morfenza">Ian Lourenço</a>
       </p>
     </footer>
 
   </body>
-  
 </html>
