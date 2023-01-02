@@ -11,15 +11,12 @@ function playRound(computerChoice, playerChoice) {
   if (playerChoice === "rock") {
     if (computerChoice === "rock") {
       console.log("Draw! Both players chose Rock")
-      return 0
 
     } else if (computerChoice === "paper") {
       console.log("You Lose! Paper beats Rock")
-      return 2
 
     } else {
       console.log("You Win! Rock beats Scissors")
-      return 1
     }
 
   } else if (playerChoice === "paper") {
@@ -29,34 +26,35 @@ function playRound(computerChoice, playerChoice) {
 
     } else if (computerChoice === "rock") {
       console.log("You Win! Paper beats Rock")
-      return 1
 
     } else {
       console.log("You Lose! Scissors beats Paper")
-      return 2
     }
 
   } else {
     if (computerChoice === "scissors") {
       console.log("Draw! Both players chose Scissors")
-      return 0
 
     } else if (computerChoice === "rock") {
       console.log("You Lose! Rock beats Scissors")
-      return 2
     
     } else {
       console.log("You Win! Scissors beats Paper")
-      return 1
     }
   }
 }
 
 const rockBtn = document.querySelector('#rock')
-rockBtn.addEventListener('click', playRound(getComputerChoice(), "rock")); 
+rockBtn.addEventListener('click', () => {
+  playRound(getComputerChoice(), 'rock')
+}); 
 
-const paperBtn = document.querySelector('#paper').
-paperBtn.addEventListener('click', playRound(getComputerChoice(), "paper")); 
+const paperBtn = document.querySelector('#paper')
+paperBtn.addEventListener('click', () => {
+  playRound(getComputerChoice(), 'paper')
+}); 
 
 const scissorsBtn = document.querySelector('#scissors')
-scissorsBtn.addEventListener('click', playRound(getComputerChoice(), "scisssors")); 
+scissorsBtn.addEventListener('click', () => {
+  playRound(getComputerChoice(), 'scissors')
+}); 
