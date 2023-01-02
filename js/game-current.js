@@ -52,3 +52,11 @@ function playRound(computerChoice, playerChoice) {
   }
 }
 
+const rockBtn = document.querySelector('#rock')
+rockBtn.addEventListener('click', playRound(getComputerChoice(), "rock")); 
+
+const paperBtn = document.querySelector('#paper').
+paperBtn.addEventListener('click', playRound(getComputerChoice(), "paper")); 
+
+const scissorsBtn = document.querySelector('#scissors')
+scissorsBtn.addEventListener('click', playRound(getComputerChoice(), "scisssors")); 
