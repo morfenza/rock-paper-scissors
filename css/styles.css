@@ -55,8 +55,24 @@ img {
   align-self: center;
 }
 
+.btn {
+  transition: all 0.1s ease-in;
+  text-decoration: none;
+}
+
+.glow-button:hover {
+  color: white;
+  box-shadow: 0 5px 15px #b4b9ff;
+}
+
+.pc-glow-button {
+  transition: all 1s ease-in-out;
+  background-color: #f89393;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 5px 15px #f05454;
+}
+
 #result {
   align-self: center;
 }
-
-
